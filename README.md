@@ -2,21 +2,27 @@
 ###  Date: 21-04-2026
 
 # AIM:
+
 To Develop a python program to Plot a time series data (population/ market price of a commodity
-/temperature.
+ temperature.
+ 
 # ALGORITHM:
+
 1. Import the required packages like pandas and matplot
 2. Read the dataset using the pandas
 3. Calculate the mean for the respective column.
 4. Plot the data according to need and can be altered monthly, or yearly.
 5. Display the graph.
+
+   
 # PROGRAM:
+
 ```
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load dataset
-df = pd.read_csv("temperateure_data.csv")
+df = pd.read_excel("/content/temperature_data.xlsx")
 
 # Convert Date column to datetime
 df['Date'] = pd.to_datetime(df['Date'])
@@ -40,19 +46,9 @@ plt.grid()
 plt.show()
 ```
 
-
-
-
-
-
-
-
-
-
-
 # OUTPUT:
 
-<img width="912" height="766" alt="Screenshot 2026-04-20 215227" src="https://github.com/user-attachments/assets/dfaf03f3-3ffb-4dff-af3e-1d4b4e29232d" />
+<img width="732" height="635" alt="image" src="https://github.com/user-attachments/assets/eb8d459e-4859-402d-a072-bec9fbfdaaf0" />
 
 
 
